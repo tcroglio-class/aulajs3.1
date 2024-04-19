@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Média</title>
+    <style>
+        main {
+            text-align: center;
+            margin-top: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Calcular Média</h1>
+    </main>
+
+    <script>
+        function calcularMedia(numeros) {
+            let soma = numeros.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0);
+            let media = soma / numeros.length;
+            return media;
+        }
+
+        console.log(calcularMedia([5, 2, 3, 10, 29]));
+    </script>
+
+</body>
+
+</html>

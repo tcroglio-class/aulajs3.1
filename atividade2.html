@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Maioridade</title>
+    <style>
+        main {
+            text-align: center;
+            margin-top: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Verificar Maioridade</h1>
+    </main>
+
+    <script>
+        function verificarMaioridade(idade) {
+            
+            if (idade == 18) {
+                return 'Você tem exatamente 18 anos, então você já é considerado maior de idade!';
+            } else if (idade > 18) {
+                return 'Maior de idade!';
+            } else {
+                return 'Menor de idade!'
+            }
+        }
+        console.log(verificarMaioridade(18));
+    </script>
+
+</body>
+
+</html>
